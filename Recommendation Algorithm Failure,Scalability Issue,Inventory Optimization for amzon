@@ -1,0 +1,82 @@
+/*
+Scalability Issue
+Write a C program to simulate a scalability issue in Amazon's platform. Assume that the platformcanhandle a maximum of 500,000 concurrent users. If the number of users exceeds 500,000, the
+platform crashes. Write a program to simulate this scenario and display the result.
+*/
+// #include<stdio.h>
+// #include<stdlib.h>
+// void main()
+// {
+//     int ch ;
+//     long long int user=0;   // %lld is format specifier
+//     while(1)
+//     {
+//         printf("Hii...welcome to amazon*\n1)login\n2)log out\n3)exit choice\n4)show our users\n");
+//         scanf("%d",&ch);
+//         if(ch==1){
+//             user++;
+//         }
+//         if(ch==2){
+//             user--;
+//         }
+
+//         if(user>=500000){ 
+//             printf("limit crossed\n");
+//             exit(0);
+//         }
+
+//         if(ch==3){
+//             exit(0);
+//         }
+//         if(ch==4){
+//             printf("%d\n",user);
+//         }
+//     }
+// }
+
+//: Recommendation Algorithm Failure
+/*
+Write a C program to simulate a recommendation algorithm failure in Amazon's platform. Assume
+that the algorithm fails with a probability of 0.02 (2%). Write a program to simulate 100 product
+recommendations and display the number of failed recommendations.
+*/
+
+// #include<stdio.h>
+// void main()
+// {   
+//     int num;
+//     printf("Enter the no of recomadation\n");
+//     scanf("%d",&num);
+//     float failure=0.02*num;
+//     printf("%f",failure);
+
+// }
+
+
+//Inventory Optimization
+/* 
+Write a C program to optimize the inventory management in Amazon's platform. Assume that the
+platform has 10 warehouses and each warehouse has a limited capacity. Write a programto find the
+optimal inventory allocation using a dynamic programming algorithm. 
+*/
+// #include<stdio.h>
+// #define MAX 10
+// void main()
+// {
+//     int warehouse[MAX],warno;
+//     int capacity[100]={1,2,12,4,10,20,15,6,4,10};
+//     for(int i=0;i<MAX;i++)
+//     {
+//          warehouse[i]=0;
+//     }
+//     while(1)
+//     {
+//         printf("Enter the warehouse num\n");
+//         scanf("%d",&warno);
+//         warehouse[warno]++;
+//         if(warehouse[warno]>=capacity[warno])
+//         {printf("full capacity. nosapce for new goods.go for another warehouse\n");}
+
+
+//     }
+// }
